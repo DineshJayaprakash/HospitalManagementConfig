@@ -1,0 +1,10 @@
+
+server:
+       port : 8083
+
+feign:
+    client:
+         proxy:
+             patientModule : http://localhost:8082
+             userModule : http://localhost:8081
+
