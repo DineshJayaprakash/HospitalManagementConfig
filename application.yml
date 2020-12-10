@@ -14,11 +14,6 @@ spring:
     properties:
              hibernate:
                      dialect: org.hibernate.dialect.MySQL8Dialect
-  cache:
-      type: redis
-  redis:
-     host: localhost
-     port: 6370
      
 management:
         endpoints:
