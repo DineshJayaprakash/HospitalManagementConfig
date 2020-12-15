@@ -1,8 +1,8 @@
 spring:
   cloud:
       consul:
-           host: localhost
-           port: 8500
+           host: ${CONSUL_HOST:localhost}
+           port: ${CONSUL_HOST_PORT:8500}
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/hospitalmanagement?allowPublicKeyRetrieval=true&useSSL=false
