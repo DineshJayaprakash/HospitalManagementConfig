@@ -5,9 +5,9 @@ spring:
            port: 8500
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysqldb/usermodule?allowPublicKeyRetrieval=true&useSSL=false
-    username: root
-    password: Balaji@407
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/hospitalmanagement?allowPublicKeyRetrieval=true&useSSL=false
+    username: ${username}
+    password: ${password}
   jpa:
     hibernate.ddl-auto: update
     show-sql: true
