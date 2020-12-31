@@ -1,0 +1,4 @@
+opentracing:
+  jaeger:
+      host: localhost
+      port: 16686
