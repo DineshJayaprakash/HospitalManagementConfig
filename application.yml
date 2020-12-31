@@ -1,11 +1,11 @@
 spring:
   cloud:
       consul:
-           host: host.docker.internal
+           host: localhost
            port: 8500
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST:host.docker.internal}:3306/usermodule?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/usermodule?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: ${username}
     password: ${password}
   jpa:
@@ -14,6 +14,8 @@ spring:
     properties:
              hibernate:
                      dialect: org.hibernate.dialect.MySQL8Dialect 
+                     
+ ## note while using docker change it host.docker.internal
 
 
  
