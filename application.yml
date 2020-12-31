@@ -6,8 +6,8 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/usermodule?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
-    username: ${username}
-    password: ${password}
+    username: root
+    password: Balaji@407
   jpa:
     hibernate.ddl-auto: update
     show-sql: true
@@ -16,6 +16,8 @@ spring:
                      dialect: org.hibernate.dialect.MySQL8Dialect 
                      
  ## note while using docker change it host.docker.internal
+ ## username: ${username}
+ ## password: ${password}
 
 
  
