@@ -1,0 +1,12 @@
+server:
+   port: 9194
+   
+   
+logging:
+      file:
+         name: ELKService.log
+         
+opentracing:
+  jaeger:
+      host: localhost
+      port: 16686
