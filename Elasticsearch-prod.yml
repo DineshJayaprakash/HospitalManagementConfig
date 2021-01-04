@@ -1,0 +1,8 @@
+server:
+    port: 9193
+
+spring:
+     data:
+        elasticsearch:
+               cluster-name: My-Patients
+               cluster-nodes: localhost:9300
